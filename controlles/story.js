@@ -13,7 +13,8 @@ storyRouter.post('/', (request, response, next) => {
     const story = new Story({
       author: body.author,
       title: body.title,
-      content: body.content
+      content: body.content,
+      readTime: body.readTime
     })
   
     story

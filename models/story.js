@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const storySchema = new mongoose.Schema({
   author: String,
   title: String,
-  content: String
+  content: String,
+  readTime: Number
 })
 
 storySchema.set('toJSON', {
